@@ -3,8 +3,8 @@ extends Node2D
 
 func _ready():
     
-    var w = 21000
-    var h = 432
+    var w = 16385
+    var h = 1
     var image = Image.new()
     
     image.create(w, h, false, Image.FORMAT_RGBA8)
