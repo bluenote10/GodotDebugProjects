@@ -1,7 +1,6 @@
 extends Node2D
 
 
-
 func _ready():
     var M = generate_random_matrix()
 
