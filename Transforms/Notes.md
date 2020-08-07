@@ -110,3 +110,31 @@ Similar to Eigen.
 ## Impact
 
 Replace `translated` to `pre_translated`.
+
+
+
+
+# LaTeX Test
+
+<img src="https://latex.codecogs.com/svg.latex?
+\begin{bmatrix}
+1 & 0 & 0 & x \prime  \\
+0 & 1 & 0 & y \prime  \\
+0 & 0 & 1 & z \prime  \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+a & b & c & x \\
+d & e & f & y \\
+g & h & i & z \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+~=~
+\begin{bmatrix}
+a & b & c & x + x \prime  \\
+d & e & f & y + y \prime  \\
+g & h & i & z + z \prime  \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+"/>
