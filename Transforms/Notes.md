@@ -114,27 +114,47 @@ Replace `translated` to `pre_translated`.
 
 
 
-# LaTeX Test
+# Formulas
 
-<img src="https://latex.codecogs.com/svg.latex?
-\begin{bmatrix}
-1 & 0 & 0 & x \prime  \\
-0 & 1 & 0 & y \prime  \\
-0 & 0 & 1 & z \prime  \\
-0 & 0 & 0 & 1
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
-a & b & c & x \\
-d & e & f & y \\
-g & h & i & z \\
-0 & 0 & 0 & 1
-\end{bmatrix}
-~=~
-\begin{bmatrix}
-a & b & c & x + x \prime  \\
-d & e & f & y + y \prime  \\
-g & h & i & z + z \prime  \\
-0 & 0 & 0 & 1
-\end{bmatrix}
-"/>
+## Translation
+
+**Left multiply**
+
+![](formulas/Translation_lm.png)
+
+**Right multiply**
+
+![](formulas/Translation_rm.png)
+
+
+## Scale
+
+**Left multiply**
+
+![](formulas/Scale_lm.png)
+
+**Right multiply**
+
+![](formulas/Scale_rm.png)
+
+
+## Rotation
+
+**Left multiply**
+
+![](formulas/Rotation_lm.png)
+
+**Right multiply**
+
+![](formulas/Rotation_rm.png)
+
+
+## Generic transform
+
+**Left multiply**
+
+![](formulas/Transform_lm.png)
+
+**Right multiply**
+
+![](formulas/Transform_rm.png)
