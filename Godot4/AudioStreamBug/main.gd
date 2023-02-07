@@ -19,6 +19,8 @@ func _ready():
 	audio_stream_player.play(0.0)
 	
 	audio_stream_generator_playback = audio_stream_player.get_stream_playback()
+	
+	print(audio_stream_generator_playback)
 
 
 func _process(_delta):
