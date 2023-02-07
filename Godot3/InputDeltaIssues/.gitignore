@@ -1,6 +1,5 @@
+# Godot-specific ignores
 .import/
+logs/
 export.cfg
 export_presets.cfg
-
-/Godot3/*.zip
-/Godot4/*.zip
