@@ -44,6 +44,7 @@ func try_add_generator():
 		if frames_available > 0:
 			num_frames_available += 1
 			# print(frames_available)
+			# print(audio_stream_generator_playback.get_skips())
 		var elapsed_ms = Time.get_ticks_msec() - start_time
 		if num_frames_available == num_expected_successful_fills:
 			print("Stream seems to work after %d ms" % elapsed_ms)
