@@ -77,3 +77,13 @@ func _process(_delta):
 	
 	if frames_available > 0:
 		fill(frames_available)
+
+
+func _input(event):
+	if event.is_pressed() and event.is_action("ui_accept"):
+		print("Simulating buffer underrun...")
+		var start_time = Time.get_ticks_msec()
+		while true:
+			var elapsed_ms = Time.get_ticks_msec() - start_time
+			if elapsed_ms > 1000:
+				break
