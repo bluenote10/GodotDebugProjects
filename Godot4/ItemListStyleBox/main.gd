@@ -13,6 +13,7 @@ func _ready():
 	custom_theme.set_constant("margin_bottom", "MarginContainer", 20)
 	custom_theme.set_constant("margin_top", "MarginContainer", 20)
 	
+	# This line messes up the priority of the guides
 	custom_theme.set_color("guide_color", "ItemList", Color(0.95, 0.95, 0.95))
 	
 	var style_box
