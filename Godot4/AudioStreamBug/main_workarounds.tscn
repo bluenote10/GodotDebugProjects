@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu2w8u3yj7l0d"]
+
+[ext_resource type="Script" path="res://main_workarounds.gd" id="1_f420c"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_f420c")
