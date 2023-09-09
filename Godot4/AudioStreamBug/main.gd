@@ -1,5 +1,6 @@
 extends Node
 
+var audio_stream_player: AudioStreamPlayer
 var audio_stream_generator_playback: AudioStreamGeneratorPlayback
 var i := 0
 
@@ -7,7 +8,7 @@ const SAMPLE_RATE = 44100.0
 
 
 func _ready():
-	var audio_stream_player = AudioStreamPlayer.new()
+	audio_stream_player = AudioStreamPlayer.new()
 	
 	var audio_stream_generator = AudioStreamGenerator.new()
 	audio_stream_generator.set_mix_rate(SAMPLE_RATE)
@@ -42,3 +43,14 @@ func _process(_delta):
 
 		audio_stream_generator_playback.push_buffer(buffer)
 
+func _input(event):
+	if event.is_pressed() and event.is_action("ui_accept"):
+		print("Toggling")
+		if audio_stream_player.is_playing():
+			audio_stream_player.stop()
+		else:
+			audio_stream_player.play(0.0)
+			# Note that calling `play` will always create a new instance of the "playback" object.
+			# Therefore we cannot use the old playback reference any longer, and have to update
+			# to the new reference.
+			audio_stream_generator_playback = audio_stream_player.get_stream_playback()
